@@ -37,8 +37,8 @@ int main()
     // «аполн€ем матрицы a и b случайными числами
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < m; j++) {
-            a[i][j] = rand() % (end - start + 1);
-            b[i][j] = rand() % (end - start + 1);
+            a[i][j] = rand() % (end - start + 1) + start;
+            b[i][j] = rand() % (end - start + 1) + start;
         }
     }
 
